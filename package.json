@@ -1,0 +1,32 @@
+{
+  "name": "projeto-app-flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start:dev": "tsx src/server.ts",
+    "start:watch": "tsx watch src/server.ts",
+    "dist": "tsup src",
+    "start:dist": "npm run dist && node/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilenaMP/node-ts-webapi-without-frameworks-podcast-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MilenaMP/node-ts-webapi-without-frameworks-podcast-manager/issues"
+  },
+  "homepage": "https://github.com/MilenaMP/node-ts-webapi-without-frameworks-podcast-manager#readme",
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
