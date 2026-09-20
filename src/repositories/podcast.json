@@ -5,5 +5,12 @@
         "videoId": "pQSuQmVfS30",
         "cover": "https://i.ytimg.com/vi/pQSuQmVfS30",
         "categories": ["saúde", "esporte", "bodybuilder"]
+    },
+     {
+        "podcastName": "Venus",
+        "episode": "XuXa",
+        "videoId": "0000000000",
+        "cover": "https://i.ytimg.com/vi/0000000000",
+        "categories": ["humor", "entretenimento", "comédia"]
     }
     ]
