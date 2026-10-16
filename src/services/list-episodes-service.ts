@@ -1,7 +1,19 @@
+import { PodcastTransferModel } from "../models/filter-podcast-model";
 import { repositoryPodcast } from "../repositories/podcast-repository";
+import { StatusCode } from "../utils/status-code";
 
-export const serviceListEpisode = async () => {
+export const serviceListEpisode = async () : Promise<PodcastTransferModel> => {
+    let responseFormat : PodcastTransferModel = {
+        statusCode: 0,
+        body: [],
+    };
+
     const data = await repositoryPodcast();
 
-    return data;
+    responseFormat = {
+        statusCode: data.length !== 0 ? StatusCode.OK : StatusCode.NO_CONTENT,
+        body: data,
+    };
+
+    return responseFormat;
 }
